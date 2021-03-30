@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 class ManagementUserController extends Controller
 {
     public function index(){
-    return "Method ini nantinya akan digunakan untuk mengambil semua data user.";
+    
+        $nama ="Satsa Ratri";
+        $pelajaran =["Algoritma & Pemograman" , "Kalkulus" , "Pemograman Web"];
+        return view ('home' , compact ('nama' , 'pelajaran'));
     }
 
     public function create(){
