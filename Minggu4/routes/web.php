@@ -22,3 +22,9 @@ Route::group (
         Route::resource('home', 'HomeController');
     }
 );
+
+Route::group (
+    ['namespace' => 'backend'],function(){
+        Route::resource('dashboard', 'DashboardController');
+    }
+);
