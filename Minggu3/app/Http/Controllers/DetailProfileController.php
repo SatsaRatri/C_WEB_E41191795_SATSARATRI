@@ -27,4 +27,10 @@ class DetailProfileController extends Controller
   public function destroy($id){
     return "Menghapus Data Dengan id" .$id;
   }
+  public function biodata(){
+
+    $nama = "Satsa Ratri";
+    $pelajaran = ["ALgoritma & Pemograman", "Kalkulus", "Pemograman Web"];
+    return view('home', compact('nama', 'pelajaran'));
+  }
 }
